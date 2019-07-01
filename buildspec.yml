@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+  pre_build:
+    commands:
+      - npm install -g hexo-cli
+  build:
+    commands:
+       - npm i
+       - hexo generate
+  post_build:
+    commands:
+       - aws s3 sync public s3://room.nolit.net --delete --acl public-read 
