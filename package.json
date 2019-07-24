@@ -1,6 +1,7 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "nolit-blog",
+  "description": "Nolit Engineer Blog",
+  "version": "1.0.0",
   "private": true,
   "hexo": {
     "version": "3.9.0"
